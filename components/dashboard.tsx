@@ -9,6 +9,7 @@ import { ProgressAnalytics } from "@/components/progress-analytics"
 import { TaskReminders } from "@/components/task-reminders"
 import { DecisionSupport } from "@/components/decision-support"
 import { BrainLogo } from "@/components/brain-logo"
+import { CommandCenter } from "@/components/command-center"
 import { LayoutDashboard, BookOpen, FlaskConical, User, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -113,6 +114,33 @@ export function Dashboard() {
                       <p className="font-medium">Review Network Protocols</p>
                       <p className="text-sm text-muted-foreground">Network Security • 20 min</p>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-3">
+              <CommandCenter className="lg:col-span-2" />
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">System Pulse</CardTitle>
+                  <CardDescription>Live signals from your learning environment</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="rounded-lg border border-border bg-muted/40 p-3">
+                    <p className="text-xs text-muted-foreground">Focus readiness</p>
+                    <p className="text-2xl font-bold text-chart-2">82%</p>
+                    <p className="text-xs text-muted-foreground">Peak window at 7:30 PM</p>
+                  </div>
+                  <div className="rounded-lg border border-border bg-muted/40 p-3">
+                    <p className="text-xs text-muted-foreground">Risk alerts</p>
+                    <p className="text-2xl font-bold text-chart-5">2</p>
+                    <p className="text-xs text-muted-foreground">Pending lab dependencies</p>
+                  </div>
+                  <div className="rounded-lg border border-border bg-muted/40 p-3">
+                    <p className="text-xs text-muted-foreground">Mentor nudges</p>
+                    <p className="text-2xl font-bold text-primary">5</p>
+                    <p className="text-xs text-muted-foreground">AI hints ready to review</p>
                   </div>
                 </CardContent>
               </Card>
